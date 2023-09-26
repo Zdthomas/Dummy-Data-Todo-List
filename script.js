@@ -1,6 +1,16 @@
     // We'll pre-populate this array with a couple objects just so it's not undefined if your internet connection isn't working properly.
 
+
+    
+    // let userId = document.createElement('button');
+    
+    // userId.textContent = 'Get ToDos for ID';
+    // document.body.appendChild(userId);
+    
+   
+
     let arrayOfTodos = []
+    
     
     const fetchTodos = () => {
         fetch('https://jsonplaceholder.typicode.com/todos')
@@ -34,6 +44,42 @@
             
             todoList.appendChild(li);
 
+            
         }
+
+        const checkbox = document.createElement('input')
+       
+        
+    }
+    
+
+    const filterTodos = () => { 
+
+        
+
+        let userId = document.querySelector("userId")
+        for (let i = 1; i < userId.length; i++) {
+            
+        }
+          console.log(userId)  
+            
     }
 
+    // const completed = () => {
+    //   const todoList = true
+    //   return todoList.completed
+    // }
+
+    // const incompleted =() => {
+    //     if(todoList.incompleted) {
+    //         return arrayOfTodos = false
+    //     }
+    // }
+
+    // const result = todoList.filter((todos) => todos.completed)
+    // console.log(result)
+    
+
+//Tried my best but this has gone over my head even with the lesson book and other sites.
+//Hopefully will understand it later.
+//Sorry for the incomplete assigment.

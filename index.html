@@ -6,12 +6,34 @@
     <title>Todos</title>
 </head>
 <body>
+    <form onsubmit= "filterTodos()">
+        <label for="User">User Id:</label>
+        <input type="number" id="userId" name="User" min="1" max="10">
+        <button onclick="filterTodos()">Filter</button>
+        
+    
+    </form>
+    <br>
     <button onclick="fetchTodos()">Fetch Todos</button>
     <button onclick="logTodos()">Log Todos</button>
     <button onclick="populateTodos()">Populate Todos</button>
+    
+
+
+
+
+    <!-- <button onclick="filterTodos()">Filter</button> -->
+    
+    <form>
+    <button onclick="filterTodos()">Completed</button>
+    <button onclick="filterTodos()">Incomplete</button>
+    </form>
+
+
     <ol id="todo-list">
     <!-- LIs will go here -->
     </ol>
+    <div id="Results"></div>
     <script src="script.js"></script>
 </body>
 </html>
